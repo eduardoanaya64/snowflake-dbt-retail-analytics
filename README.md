@@ -30,6 +30,8 @@ Source Systems
 - Customers
 
 ## 📁 Project Structure
+
+```text
 .
 ├── analyses/          # Ad-hoc dbt analyses
 ├── macros/            # Reusable dbt macros
@@ -46,7 +48,7 @@ Source Systems
 ├── marts.yml          # Mart-level tests & documentation
 ├── dbt_lineage.png    # dbt lineage diagram
 └── dbt_project_overview.png  # dbt project overview screenshot
-
+```
 
 ## 🗄️ Data Models
 ### **Staging Layer**
