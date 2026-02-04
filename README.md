@@ -61,7 +61,7 @@ Actions performed:
 - Business-friendly naming
 - Source-level validation via dbt tests
 
-🔹 **Fact Layer**
+### **Fact Layer**
 
 Purpose: **Unified revenue logic across channels**
 
@@ -73,7 +73,7 @@ Features:
 - Normalizes revenue structure
 - Enables channel-level comparisons
 
-🔹 **Reporting Layer**
+### **Reporting Layer**
 
 Purpose: BI-ready aggregates
 
@@ -85,7 +85,7 @@ Output:
 - Total revenue and units
 - Optimized for Power BI consumption
 
-✅ Data Quality & Testing
+## ✅ Data Quality & Testing
 
 dbt tests implemented:
 
