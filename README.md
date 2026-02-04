@@ -1,4 +1,5 @@
-Retail Revenue Analytics (Snowflake + dbt + Power BI)
+### Retail Revenue Analytics (Snowflake + dbt + Power BI)
+
 📌 Overview
 
 This project demonstrates an end-to-end analytics engineering workflow using Snowflake, dbt, and Power BI to model, validate, and report retail revenue data from multiple operational sources.
