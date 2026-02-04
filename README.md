@@ -76,19 +76,53 @@ select
     payment_type
 from {{ source('retail_raw', 'POS_TRANSACTIONS') }}
 ```
+✔ Shows dbt best practices  
+✔ Shows source usage  
+✔ Not too long 
+
+---
+
+## 🧮 Example: Fact SQL
 
 Actions performed:
 
-- Column renaming
-- Data type casting
-- Business-friendly naming
-- Source-level validation via dbt tests
+
 
 ### **Fact Layer**
 
-Purpose: **Unified revenue logic across channels**
+```markdown
+### 🧮 Fact Layer
 
-- fct_revenue.sql
+Fact models consolidate multiple staging sources into analytics-ready
+tables with business logic applied.
+
+Example: `fct_revenue.sql`
+
+```sql
+select
+    transaction_date as revenue_date,
+    revenue_channel,
+    sum(net_sales) as revenue_amount,
+    sum(quantity) as units
+from (
+    select
+        transaction_date,
+        'POS' as revenue_channel,
+        net_sales,
+        quantity
+    from {{ ref('stg_pos_transactions') }}
+
+    union all
+
+    select
+        invoice_date as transaction_date,
+        'BILLINGS' as revenue_channel,
+        net_sales,
+        quantity
+    from {{ ref('stg_billings_invoices') }}
+)
+group by 1, 2
+```
 
 Features:
 
@@ -96,11 +130,28 @@ Features:
 - Normalizes revenue structure
 - Enables channel-level comparisons
 
+---
+
 ### **Reporting Layer**
 
-Purpose: BI-ready aggregates
+```markdown
+### 📈 Reporting Layer
 
-- rpt_daily_revenue.sql
+Reporting models aggregate fact data into BI-friendly tables optimized
+for dashboard consumption.
+
+Example: `rpt_daily_revenue.sql`
+
+```sql
+select
+    revenue_date,
+    revenue_channel,
+    sum(revenue_amount) as revenue_amount,
+    sum(units) as units
+from {{ ref('fct_revenue') }}
+group by 1, 2
+order by 1, 2
+```
 
 Output:
 
