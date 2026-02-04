@@ -6,6 +6,8 @@ This project demonstrates an end-to-end analytics engineering workflow using Sno
 
 Raw transactional data is ingested into Snowflake, transformed using dbt into clean staging and fact models, and exposed through reporting tables optimized for BI consumption.
 
+![dbt Project Overview](dbt_project_overview.png)
+
 ## 🏗️ Architecture
 
 ## Data Flow
