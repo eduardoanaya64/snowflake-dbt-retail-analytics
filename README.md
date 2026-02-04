@@ -47,7 +47,7 @@ Source Systems
 └── *.png                  # Documentation screenshots
 
 ## 🗄️ Data Models
-🔹 **Staging Layer**
+### **Staging Layer**
 
 Purpose: **Clean, standardize, and type-cast raw data**
 
