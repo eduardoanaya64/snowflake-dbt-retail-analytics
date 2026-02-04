@@ -100,7 +100,7 @@ Tests are defined in:
 
 All models successfully pass dbt test.
 
-📈 dbt Lineage
+## 📈 dbt Lineage
 
 The following lineage graph shows the full transformation path from raw sources to reporting models:
 
