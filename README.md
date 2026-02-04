@@ -57,8 +57,25 @@ Source Systems
 
 Purpose: **Clean, standardize, and type-cast raw data**
 
-- stg_pos_transactions.sql
-- stg_billings_invoices.sql
+Example: `stg_pos_transactions.sql`
+
+```sql
+select
+    pos_transaction_id,
+    cast(transaction_date as date) as transaction_date,
+    store_id,
+    store_name,
+    store_state,
+    product_id,
+    product_name,
+    category,
+    quantity,
+    unit_price,
+    discount_amount,
+    net_sales,
+    payment_type
+from {{ source('retail_raw', 'POS_TRANSACTIONS') }}
+```
 
 Actions performed:
 
