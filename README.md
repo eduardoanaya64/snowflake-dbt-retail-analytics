@@ -29,7 +29,8 @@ Source Systems
 - Products
 - Customers
 
-## 🧱 Project Structure
+📁 Project Structure
+
 .
 ├── analyses/          # Ad-hoc dbt analyses
 ├── macros/            # Reusable dbt macros
@@ -45,7 +46,8 @@ Source Systems
 ├── staging.yml        # Staging tests & documentation
 ├── marts.yml          # Mart-level tests & documentation
 ├── dbt_lineage.png    # dbt lineage diagram
-├── dbt_project_overview.png  # dbt project overview screenshot
+└── dbt_project_overview.png  # dbt project overview screenshot
+
 
 ## 🗄️ Data Models
 ### **Staging Layer**
