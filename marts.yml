@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: fct_revenue
+    description: "Unified revenue fact combining POS transactions and direct/billings invoices."
+    columns:
+      - name: revenue_date
+        description: "Date the revenue was recognized (transaction date for POS, invoice date for billings)."
+        tests: [not_null]
+
+      - name: revenue_channel
+        description: "Revenue source channel."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['POS', 'BILLINGS']
+
+      - name: product_id
+        description: "Product identifier."
+        tests: [not_null]
+
+      - name: revenue_amount
+        description: "Net revenue amount for the line item."
+        tests: [not_null]
+
+  - name: rpt_daily_revenue
+    description: "Daily revenue and unit totals by revenue channel."
