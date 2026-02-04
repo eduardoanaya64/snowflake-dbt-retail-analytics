@@ -114,80 +114,73 @@ Flow:
 
 RAW → STAGING → FACT → REPORT
 
-📚 dbt Documentation
+## 📚 dbt Documentation
 
 dbt documentation was generated and deployed using:
 
-dbt docs generate
-
+**dbt docs generate**
 
 The project includes:
 
-Model-level documentation
+- Model-level documentation
+- Column descriptions
+- Test visibility
+- Full lineage exploration
 
-Column descriptions
-
-Test visibility
-
-Full lineage exploration
-
-📊 Power BI Integration
+## 📊 Power BI Integration
 
 The final reporting table:
 
-RETAIL_DB.STAGING.RPT_DAILY_REVENUE
+**RETAIL_DB.STAGING.RPT_DAILY_REVENUE** is designed to be consumed directly by Power BI.
 
+**Power BI Design Considerations**
 
-is designed to be consumed directly by Power BI.
-
-Power BI Design Considerations
-
-Import mode recommended for performance
-
-Date hierarchy supported
+- Import mode recommended for performance
+- Date hierarchy supported
 
 Measures built for:
-
-Total Revenue
-
-Total Units
-
-Revenue by Channel
-
-Daily Trends
-
-KPI visuals enabled for executive dashboards
+   - Total Revenue
+   - Total Units
+   - Revenue by Channel
+   - Daily Trends
+- KPI visuals enabled for executive dashboards
 
 Power BI connects directly to Snowflake using native connectors.
 
-🚀 How to Run This Project
+## 🚀 How to Run This Project
+
+```text
 dbt run
 dbt test
 dbt docs generate
-
+```
 
 To build only specific layers:
 
+```text
 dbt run --select staging
 dbt run --select fct_revenue
 dbt run --select rpt_daily_revenue
+```
 
-🛠️ Tools Used
+## 🛠️ Tools Used
 
-Snowflake – Cloud data warehouse
+**Snowflake** – Cloud data warehouse
 
-dbt Cloud – Transformations, testing, documentation
+**dbt Cloud** – Transformations, testing, documentation
 
-Power BI – Analytics & visualization
+**Power BI** – Analytics & visualization
 
-GitHub – Version control
+**GitHub** – Version control
 
-🎯 Key Takeaways
+## 🎯 Key Takeaways
 
-Demonstrates modern analytics engineering best practices
+- Demonstrates modern analytics engineering best practices
+- End-to-end lineage from raw data to BI
+- Production-ready dbt project with testing and documentation
+- Designed for real-world reporting and stakeholder consumption
 
-End-to-end lineage from raw data to BI
 
-Production-ready dbt project with testing and documentation
 
-Designed for real-world reporting and stakeholder consumption
+
+
