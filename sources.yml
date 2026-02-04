@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: retail_raw
+    database: RETAIL_DB
+    schema: RAW
+    tables:
+      - name: POS_TRANSACTIONS
+        description: "POS transaction line items loaded from CSV."
+      - name: BILLINGS_INVOICES
+        description: "Invoice line items (direct/billings) loaded from CSV."
+      - name: PRODUCTS
+        description: "Product reference data loaded from CSV."
+      - name: CUSTOMERS
+        description: "Customer reference data loaded from CSV."
