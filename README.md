@@ -104,7 +104,7 @@ All models successfully pass dbt test.
 
 The following lineage graph shows the full transformation path from raw sources to reporting models:
 
-
+![dbt Lineage Graph](./dbt_lineage.png)
 
 Flow:
 
