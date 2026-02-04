@@ -29,22 +29,23 @@ Source Systems
 - Products
 - Customers
 
-🧱 Project Structure
+## 🧱 Project Structure
 .
-├── analyses/              # Ad-hoc dbt analyses
-├── macros/                # dbt macros
+├── analyses/          # Ad-hoc dbt analyses
+├── macros/            # Reusable dbt macros
 ├── models/
-│   ├── staging/           # Cleaned staging models
-│   ├── marts/             # Fact & reporting models
-│   ├── sources.yml        # Source definitions
-│   ├── staging.yml        # Staging tests & docs
-│   └── marts.yml          # Mart-level tests & docs
-├── seeds/                 # Seed data (if applicable)
-├── snapshots/             # Snapshot definitions
-├── tests/                 # Custom tests
-├── README.md              # Project documentation
-├── dbt_project.yml        # dbt project configuration
-└── *.png                  # Documentation screenshots
+│   ├── staging/       # Cleaned & standardized staging models
+│   └── marts/         # Fact tables & reporting models
+├── seeds/             # Seed data (if applicable)
+├── snapshots/         # Snapshot definitions
+├── tests/             # Custom dbt tests
+├── README.md          # Project documentation
+├── dbt_project.yml    # dbt project configuration
+├── sources.yml        # Source definitions
+├── staging.yml        # Staging tests & documentation
+├── marts.yml          # Mart-level tests & documentation
+├── dbt_lineage.png    # dbt lineage diagram
+├── dbt_project_overview.png  # dbt project overview screenshot
 
 ## 🗄️ Data Models
 ### **Staging Layer**
