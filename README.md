@@ -1,4 +1,4 @@
-## Retail Revenue Analytics (Snowflake + dbt + Power BI)
+# Retail Revenue Analytics (Snowflake + dbt + Power BI)
 
 ## 📌 Overview
 
