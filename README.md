@@ -29,8 +29,7 @@ Source Systems
 - Products
 - Customers
 
-📁 Project Structure
-
+## 📁 Project Structure
 .
 ├── analyses/          # Ad-hoc dbt analyses
 ├── macros/            # Reusable dbt macros
