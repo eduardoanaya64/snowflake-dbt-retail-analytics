@@ -1,0 +1,5 @@
+customer_id,customer_name,customer_type,customer_tier
+C200,Forward Solutions,Distributor,Gold
+C201,Avision Retail Group,Retailer,Silver
+C202,Industrial Supply Co,Industrial,Gold
+C203,AutoParts Wholesale,Distributor,Bronze

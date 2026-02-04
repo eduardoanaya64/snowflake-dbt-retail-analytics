@@ -1,0 +1,11 @@
+pos_transaction_id,transaction_date,store_id,store_name,store_state,product_id,product_name,category,quantity,unit_price,discount_amount,net_sales,payment_type
+POS10001,2025-01-02,101,Target Irvine,CA,P100,All-Purpose Cleaner,Household,2,5.99,1,10.98,Credit
+POS10002,2025-01-02,101,Target Irvine,CA,P101,Glass Cleaner,Household,1,4.49,0,4.49,Debit
+POS10003,2025-01-02,102,Walmart Anaheim,CA,P100,All-Purpose Cleaner,Household,3,5.79,0,17.37,Cash
+POS10004,2025-01-03,103,Home Depot Tustin,CA,P102,Degreaser,Automotive,1,8.99,1.5,7.49,Credit
+POS10005,2025-01-03,101,Target Irvine,CA,P103,Laundry Detergent,Household,2,12.99,0,25.98,Credit
+POS10006,2025-01-04,104,Lowe's Orange,CA,P102,Degreaser,Automotive,4,8.79,0,35.16,Debit
+POS10007,2025-01-04,102,Walmart Anaheim,CA,P101,Glass Cleaner,Household,2,4.39,0.5,8.28,Credit
+POS10008,2025-01-05,103,Home Depot Tustin,CA,P100,All-Purpose Cleaner,Household,1,5.99,0,5.99,Cash
+POS10009,2025-01-05,104,Lowe's Orange,CA,P104,Industrial Cleaner,Industrial,1,19.99,2,17.99,Credit
+POS10010,2025-01-06,101,Target Irvine,CA,P103,Laundry Detergent,Household,1,12.99,0,12.99,Debit

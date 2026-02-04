@@ -1,0 +1,9 @@
+invoice_id,invoice_date,customer_id,customer_name,customer_type,product_id,product_name,quantity,unit_price,gross_amount,discount_amount,net_amount,invoice_status,payment_terms
+INV90001,2025-01-02,C200,Forward Solutions,Distributor,P100,All-Purpose Cleaner,100,4.25,425,25,400,PAID,NET30
+INV90002,2025-01-02,C201,Avision Retail Group,Retailer,P101,Glass Cleaner,150,3.75,562.5,0,562.5,PAID,NET30
+INV90003,2025-01-03,C202,Industrial Supply Co,Industrial,P104,Industrial Cleaner,50,15,750,50,700,PAID,NET45
+INV90004,2025-01-03,C200,Forward Solutions,Distributor,P102,Degreaser,75,6.5,487.5,0,487.5,OPEN,NET30
+INV90005,2025-01-04,C203,AutoParts Wholesale,Distributor,P102,Degreaser,200,6.25,1250,100,1150,PAID,NET45
+INV90006,2025-01-04,C201,Avision Retail Group,Retailer,P103,Laundry Detergent,120,9.99,1198.8,0,1198.8,PAID,NET30
+INV90007,2025-01-05,C202,Industrial Supply Co,Industrial,P104,Industrial Cleaner,80,14.75,1180,80,1100,PAID,NET45
+INV90008,2025-01-06,C200,Forward Solutions,Distributor,P100,All-Purpose Cleaner,90,4.3,387,0,387,OPEN,NET30
