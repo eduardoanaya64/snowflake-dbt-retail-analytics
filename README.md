@@ -33,23 +33,34 @@ Source Systems
 
 ## 📁 Project Structure
 
-```text
+## 📁 Project Structure
+
+```
 .
-├── analyses/          # Ad-hoc dbt analyses
-├── macros/            # Reusable dbt macros
+├── analyses/
+├── docs/
+│   ├── dbt_lineage.png
+│   └── dbt_project_overview.png
+├── macros/
 ├── models/
-│   ├── staging/       # Cleaned & standardized staging models
-│   └── marts/         # Fact tables & reporting models
-├── seeds/             # Seed data (if applicable)
-├── snapshots/         # Snapshot definitions
-├── tests/             # Custom dbt tests
-├── README.md          # Project documentation
-├── dbt_project.yml    # dbt project configuration
-├── sources.yml        # Source definitions
-├── staging.yml        # Staging tests & documentation
-├── marts.yml          # Mart-level tests & documentation
-├── dbt_lineage.png    # dbt lineage diagram
-└── dbt_project_overview.png  # dbt project overview screenshot
+│   ├── staging/
+│   │   ├── stg_pos_transactions.sql
+│   │   └── stg_billings_invoices.sql
+│   ├── marts/
+│   │   ├── fct_revenue.sql
+│   │   └── rpt_daily_revenue.sql
+│   ├── sources.yml
+│   ├── staging.yml
+│   └── marts.yml
+├── seeds/
+│   ├── pos_transactions.csv
+│   ├── billings_invoices.csv
+│   ├── customers.csv
+│   └── products.csv
+├── snapshots/
+├── tests/
+├── README.md
+└── dbt_project.yml
 ```
 
 ## 🗄️ Data Models
