@@ -6,7 +6,7 @@ This project demonstrates an end-to-end analytics engineering workflow using Sno
 
 Raw transactional data is ingested into Snowflake, transformed using dbt into clean staging and fact models, and exposed through reporting tables optimized for BI consumption.
 
-![dbt Project Overview](dbt_project_overview.png)
+![dbt Project Overview](docs/dbt_project_overview.png)
 
 ## 🏗️ Architecture
 
@@ -30,8 +30,6 @@ Source Systems
 - Billing Invoices
 - Products
 - Customers
-
-## 📁 Project Structure
 
 ## 📁 Project Structure
 
@@ -189,7 +187,7 @@ All models successfully pass dbt test.
 
 The following lineage graph shows the full transformation path from raw sources to reporting models:
 
-![dbt Lineage Graph](./dbt_lineage.png)
+![dbt Lineage Graph](docs/dbt_lineage.png)
 
 Flow:
 
