@@ -85,9 +85,6 @@ select
     payment_type
 from {{ source('retail_raw', 'POS_TRANSACTIONS') }}
 ```
-✔ Shows dbt best practices  
-✔ Shows source usage  
-✔ Not too long 
 
 ---
 
