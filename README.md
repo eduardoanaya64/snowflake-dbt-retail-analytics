@@ -12,6 +12,7 @@ Raw transactional data is ingested into Snowflake, transformed using dbt into cl
 
 ## Data Flow
 
+```
 CSV Sources
    ↓
 Snowflake (RAW)
@@ -23,6 +24,7 @@ dbt Fact Models
 Reporting Models
    ↓
 Power BI
+```
 
 Source Systems
 
