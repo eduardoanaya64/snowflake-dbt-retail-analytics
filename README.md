@@ -216,6 +216,8 @@ The final reporting table:
 - Import mode recommended for performance
 - Date hierarchy supported
 
+![PowerBI Snowflake DBT Portfolio](PowerBI_Snowflake_DBT_Portfolio.png)
+
 Measures built for:
    - Total Revenue
    - Total Units
