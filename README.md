@@ -207,7 +207,7 @@ The project includes:
 
 ---
 
-# 🔍 Snowflake Validation (Warehouse Output)
+## 🔍 Snowflake Validation (Warehouse Output)
 
 The reporting model was validated directly in Snowflake to confirm
 correct aggregation, channel union logic, and data accuracy prior
