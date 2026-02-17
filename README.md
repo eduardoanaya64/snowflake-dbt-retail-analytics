@@ -205,6 +205,21 @@ The project includes:
 - Test visibility
 - Full lineage exploration
 
+---
+
+### 🔍 Snowflake Validation (Warehouse Output)
+
+The reporting model was validated directly in Snowflake to confirm
+correct aggregation, channel union logic, and data accuracy prior
+to BI consumption.
+
+Query executed:
+
+```sql
+select *
+from RETAIL_DB.STAGING.RPT_DAILY_REVENUE
+order by revenue_date, revenue_channel;
+
 ## 📊 Power BI Integration
 
 The final reporting table:
