@@ -98,7 +98,7 @@ Actions performed:
 
 ### **Fact Layer**
 
-```markdown
+
 ### 🧮 Fact Layer
 
 Fact models consolidate multiple staging sources into analytics-ready
@@ -142,7 +142,7 @@ Features:
 
 ### **Reporting Layer**
 
-```markdown
+
 ### 📈 Reporting Layer
 
 Reporting models aggregate fact data into BI-friendly tables optimized
