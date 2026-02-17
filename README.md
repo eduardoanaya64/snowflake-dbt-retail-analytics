@@ -207,11 +207,18 @@ The project includes:
 
 ---
 
-### 🔍 Snowflake Validation (Warehouse Output)
+## 🔍 Snowflake Validation (Warehouse Output)
 
 The reporting model was validated directly in Snowflake to confirm
 correct aggregation, channel union logic, and data accuracy prior
 to BI consumption.
+
+![Snowflake Data Warehouse Validation](docs/snowflake_data_warehouse.png)
+
+- Daily aggregation accuracy
+- Correct union of POS and BILLINGS
+- Revenue and unit totals alignment
+- BI-ready structure
 
 Query executed:
 
@@ -219,6 +226,7 @@ Query executed:
 select *
 from RETAIL_DB.STAGING.RPT_DAILY_REVENUE
 order by revenue_date, revenue_channel;
+```
 
 ## 📊 Power BI Integration
 
